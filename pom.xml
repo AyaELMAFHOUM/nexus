@@ -50,5 +50,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+            <repository>
+                <id>nexus-repo</id> <!-- Tu choisis, mais il doit être identique dans settings.xml -->
+                <name>My Nexus Releases</name>
+                <url>http://localhost:8081/repository/nexus-repo/</url>
+            </repository>
+        </distributionManagement>
+
 
 </project>
